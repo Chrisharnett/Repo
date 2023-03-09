@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+  <title>Textboxes</title>
+</head>
+<html>
+<body>
+
+<h1>Textboxes</h1>
+
+<p>Enter some text.</p>
+<input type="text" placeholder="text" id="textbox">
+<button onclick="myFunction()">Check values</button>
+<p>Here's what you wrote:</p>
+<p id="result"></p>
+
+
+<script>
+
+function myFunction() {
+  let textVal = document.querySelector("#textbox").value;
+  document.getElementById("result").innerHTML = textVal
+}
+</script>
+
+</body>
+</html>

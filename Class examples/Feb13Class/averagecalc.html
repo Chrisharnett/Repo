@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average calculator</title>
+</head>
+<body>
+    <h1>Average calculator</h1>
+    <form>
+        <label for="score1">Score 1</label>
+        <input type="number" id="score1"><br><br>
+        <label for="score2">Score 2</label>
+        <input type="number" id="score2"><br><br>
+        <label for="score3">Score 3</label>
+        <input type="number" id="score3">
+        <br><br>
+        <button type="button" value="Calculate" onclick="calculateAverage()">Calculate</button>
+        <input type="number" id="average" placeholder="Calculate Average" value="">
+    </form>
+    <h1>Odd or Even</h1>
+    <form>
+        <label for="numberChecker">Number</label>
+        <input type="number" id="oddoreven"><br><br>
+        <button type="button" value="Odd or Even" onclick="oddOrEven()">Odd or Even</button>
+        <input type="text" id="oddorevenresult" placeholder="Odd or Even?" value="">
+    </form>
+    <h1>Triangle types</h1>
+    <form>
+        <p>Enter the dimensions of the triangle</p>
+        <label for="side1">Side 1</label>
+        <input type="number" id="side1"><br><br>
+        <label for="side2">Side 2</label>
+        <input type="number" id="side2"><br><br>
+        <label for="side3">Side 3</label>
+        <input type="number" id="side3">
+        <br><br>
+        <button type="button" value="Find Out" onclick="triangleType()">Find Out</button>
+        <input type="text" id="triangle" placeholder="Triangle Type" value="">
+    </form>
+    <script src="averagescript.js"></script>
+</body>
+</html>

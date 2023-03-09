@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bottle Deposits</title>
+    <style>
+        #result{
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bottle Deposits</h1>
+    <form>
+        <label for="smallBottles">Small Bottles (less than 1L)</label>
+        <input type="number" id="smallBottles" placeholder="Small Bottles">
+        <label for="largeBottles">Large Bottles (more than 1L)</label>
+        <input type="number" id="largeBottles" placeholder="Large Bottles">
+        <br><br>
+        <button type="button" value="Calculate Refund" onclick="convert()">Calculate Refund</button>
+        <input type="number" id="result" placeholder="Refund due" value="">
+        <br><br>
+    </form>
+    <script src="bottlescript.js"></script>
+</body>
+</html>

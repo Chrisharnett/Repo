@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="count"></p>
+    <script>
+        let totals = []
+        let displayString = ""
+        for (let i = 0; i < 10; i++) {
+            totals[i] = i+11
+            displayString += totals[i] + " ";
+        }
+        let forInSum = 0
+        let forOfSum = 0
+        for(let i in totals) {
+            forInSum += totals[i]
+        }
+
+        for (let val of totals) {
+            forOfSum += val
+        }
+
+        // let sum=0
+        // for (let i in totals) {
+        //     sum += totals[i]
+        // }
+        alert(`The numbers in the array are: ${displayString}. \nThe for-in loop totalled ${forInSum}. \nThe for-of loop totalled ${forOfSum} `)
+    </script>
+</body>
+</html>

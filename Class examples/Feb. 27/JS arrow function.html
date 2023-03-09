@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+
+<button onclick="$('demo')">Copy Text</button>
+
+<p id="demo">I am text from p1</p>
+
+<p id="demo1"></p>
+
+<script>
+
+    const $ = id => document.getElementByIt(id);
+    // const test = (id =>)
+    function $(id) {
+        let ele = document.getElementById(id).innerText;
+        document.getElementById("demo1").innerHTML = ele;
+    }
+
+</script>
+</body>
+</html>
+
+<!-- Modify this example and add a button 
+`Copy text` so that the text in `demo ` element is passed to `demo1` 
+element on the click of the button -->

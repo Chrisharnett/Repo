@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Year Convertor</title>
+</head>
+<body>
+    <h1>Convert years to dog years</h1>
+    <p id="result"></p>
+    <script>
+        let age = prompt("Enter age: ");
+        if (age < 2) {
+            dogyears = (10.5 * age) + (1*age);
+        } else if (age >= 2) {
+            dogyears = (4 * age) + (1*age);
+        }
+        document.querySelector("#result").innerHTML = age + " human years is " + dogyears + " dog years.";
+
+    </script>
+</body>
+</html>

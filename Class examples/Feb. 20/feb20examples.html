@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Value For Loop</title>
+</head>
+<p id = investment></p>
+<p id = annualRate></p>
+<p id = years></p>
+
+<script> 
+const investment = 10000;
+const annualRate = 7.0;
+const years = 10;
+
+document.getElementById("investment").innerHTML = investment
+
+let futureValue = investment;
+for(let i = 1; i <= years; i++) {
+    futureValue += futureValue * annualRate / 100 ;
+    console.log("Value of investment is ", futureValue)
+}
+alert(futureValue.toFixed(0));
+</script>
+<body>
+    
+</body>
+</html>
+

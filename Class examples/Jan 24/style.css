@@ -1,0 +1,18 @@
+body{
+    background-color: gray;
+}
+h1, h2, h3 {
+    color: purple;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: teal;
+}
+
+div {
+    width: 300px;
+    height: 200px;
+    border: 3px solid chocolate;
+    padding: 5px;
+    margin: 70px;
+    background-color: rgb(60, 110, 152);
+}
