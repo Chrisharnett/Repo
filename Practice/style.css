@@ -1,0 +1,28 @@
+/* Colors: hotpink, chocolate, moccasin, mediiumorchid, 
+forestgreen, paleturquoise, mistyrose, lightgray, 
+blueviolet, deepskyblue */
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+  } 
+.container {
+    background-color: hotpink;
+}
+header{
+    background-color: hotpink;
+}
+main{
+    background-color: hotpink;
+}
+nav{
+    background-color: hotpink;
+}
+form{
+    background-color: hotpink;
+}
+footer{
+    background-color: hotpink;
+}
