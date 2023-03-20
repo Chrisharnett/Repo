@@ -16,6 +16,8 @@ html {
 }
 .container > * {
     padding: 10px;
+    float: left;
+    width: 33.33%
 }
 header{
     background-color: chocolate;
@@ -24,6 +26,7 @@ header{
 main{
     background-color: moccasin;
     border: 5px solid black;
+    /* float: right; */
 }
 nav{
     background-color: mediumorchid;
@@ -40,6 +43,7 @@ ul{
 figure{
     background-color: palegoldenrod;
     border: 5px solid black;
+    /* float: left; */
 }
 figure > img {
     width: 100px
@@ -60,7 +64,6 @@ form{
 table{
     background-color: mistyrose;
     border: 5px solid black;
-    caption-side:top;
 }
 aside{
     background-color: forestgreen;

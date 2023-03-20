@@ -1,0 +1,94 @@
+/* Colors: hotpink, chocolate, moccasin, mediiumorchid, 
+forestgreen, paleturquoise, mistyrose, lightgray, 
+blueviolet, deepskyblue */
+
+html {
+    box-sizing: border-box;
+    font-family: Calibri, Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+.container {
+    border: 15px solid whitesmoke;
+    background-color: hotpink;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 10px;
+}
+.container > * {
+    padding: 20px;
+    border: 5px solid black;
+}
+header{
+    background-color: chocolate;
+    order: 2;
+    grid-column: 1 / 13;
+}
+main{
+    background-color: moccasin;    
+    order: 4;
+    grid-column: auto / span 6;
+}
+span{
+    font-style: italic;
+}
+nav{
+    background-color: mediumorchid;
+    grid-column: 1 / 13;
+    order: 1;
+}
+aside{
+    background-color: forestgreen;
+    order: 3;
+    grid-column: 1 / span 3;
+}
+ol {
+    background-color: lightgray;
+    order: 6;
+    grid-column: auto / span 3;
+}
+ul{
+    background-color: deepskyblue;
+    order: 7;
+    grid-column: auto / span 3;
+}
+figure{
+    background-color: palegoldenrod;
+    order: 8;
+    grid-column: auto  / span 4;
+}
+figure > img {
+    width: 100px;
+}
+table{
+    background-color: lightseagreen;
+    border: 5px solid black;
+    order: 9;
+    grid-column: auto / span 6;
+    caption-side: top;
+}
+form{
+    background-color: deepskyblue;
+    border: 5px solid black;
+    order: 5;
+    grid-column: auto / span 3;
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    /* width: auto; */
+    gap: 10px;
+}
+.flex-container > *{
+    flex: 0 1 auto;
+}
+
+footer{
+    background-color: paleturquoise;
+    border: 5px solid black;
+    order: 9;
+    grid-column: 1 / 13;
+    text-align: center;
+}

@@ -4,16 +4,72 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=>, initial-scale=1.0">
-        <style src="style.css"></style>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="style.css"> -->
+        <!-- <link rel="stylesheet" href="gridlayout.css"> -->
+        <link rel="stylesheet" href="Floats.css">
+        <!-- <link rel="stylesheet" href="flexbox.css"> -->
         <title>Playground</title>
     </head>
     <body>
         <div class="container">
             <header>Header</header>
-            <main>Main</main>
-            <nav>Nav</nav>
-            <form>Form</form>
-            <footer>Footer</footer>
+            <main>Main
+                <p>Most of the <bold>content</bold>content would be here. <span>Here's a span element.</span>Blah blah blah blah blah blah blah blah blah blah blah blah</p>
+                <p>Blah blah blah blah blah blah blah</p>
+            </main>
+            <nav>
+                <a href="#sax">Sax Picture</a>
+            </nav>
+            <aside>Aside</aside>
+            <ol>
+                <h3>An ordered list</h3>
+                <li>ordered list Item</li>
+                <li>ordered list item</li>
+            </ol>
+            <ul>
+                <h3>An unordered list</h3>
+                <li>Unordered list item</li>
+                <li>Unordered list item</li>
+            </ul>
+            <figure>
+                <img src="https://www.ramponecazzani.com/site/assets/files/2016/2008-j-aug.jpg" alt="Rampone and Cazzani R1 Jazz Tenor Saxophone" id="sax">
+                <figcaption>This is a Ramone and Cazzani R1 Jazz Tenor Saxophone</figcaption>
+            </figure>
+            <form class="flex-container"> 
+                <h2>Fill in this form</h2>  
+                <label for="input"><h4>Text goes here</h4></label>
+                <input type="text" id="input" placeholder="text goes here">
+                <label for="email"><h4>Email:</h4></label>
+                <input type="email" placeholder="email">
+                <button class="btn btn-primary">Submit</button>
+            </form>
+            <table>   
+                <caption><h2>This is a table caption</h2></caption>         
+                <thead>
+                    <th>Column thead 1</th>
+                    <th>Column thead 2</th>
+                    <th>Column thead 3</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>First row</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Second row</td>
+                        <td>2</td>
+                        <td>2</td>
+                    </tr><br>
+                    <tr>
+                        <td>Third row</td>
+                        <td>3</td>
+                        <td>3</td>
+                    </tr><br>
+                </tbody> 
+            </table>
+            <footer><time datetime="2023-03-20">20 March, 2023</time></footer>
         </div>
     </body>
 </html>
