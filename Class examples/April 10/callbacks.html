@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Fetch API</h1>
+<h2>The fetch() Method</h2>
+<p id="demo">Fetch a file to change this text.</p>
+
+<script>
+
+const bagOfToys = [];
+
+const fetchChristmasGift = (name) => {
+getGiftForChild(name, callbackFunction);
+}
+
+const getGiftForChild = (name, callback) => {
+const url = `https://cat-fact.herokuapp.com/facts`;
+const request = new XMLHttpRequest();
+
+request.onreadystatechange = function() {
+if (request.readyState === 4) {
+callback(request);
+}
+}
+
+request.open('GET', url);
+request.send();
+}
+
+const callbackFunction = (request) => {
+if (request.status == 200) {
+const gift = request.response;
+bagOfToys.push(gift);
+console.log(bagOfToys);
+} else {
+console.log("Oops! No gift for this child");
+}
+}
+
+
+
+
+fetchChristmasGift("Mehakdeep")
+
+
+// getText("https://cat-fact.herokuapp.com/facts");
+
+// async function getText(file) {
+// let x = await fetch(file);
+// let y = await x.text();
+
+// let json = JSON.parse(y)
+// let response = ` The ID is ${json[0]._id}`
+
+// for(i = 0; i < json.length ; i ++){
+// console.log(json[i]._id)
+// }
+
+// document.getElementById("demo").innerHTML = response
+// // json[0]._id;
+// }
+
+</script>
+
+</body>
+</html>
