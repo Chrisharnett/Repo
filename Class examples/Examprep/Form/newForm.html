@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form practice</title>
+    <link rel="stylesheet" href="newstyle.css">
+</head>
+<body>
+    <form class="form">
+        <h1>Sign in to a practice session</h1>
+        <div class="firstName">
+            <label for="firstName">First Name: </label>
+            <input type="text"  placeholder="Jane" id="firstName" autofocus>
+        </div>
+        <div class="lastName">
+            <label for="lastName">Last Name: </label>
+            <input type="text" placeholder="Doe" id="lastName">
+        </div>
+        <div class="email">
+            <label for="email">Email Address:</label>
+            <input type="email" placeholder="email@email.com" id="email">
+        </div>
+        <div class="confirmEmail">
+            <label for="confirmEmail">Confirm email</label>
+            <input type="email" placeholder="email@email.com" id="confirmEmail">
+        </div>
+        <div class="practiceFocus">
+            <label for="practiceFocus">Practice Focus</label>
+            <select name="practiceFocus" id="practiceFocus">Focus
+                <option value="">Select a focus</option>
+                <option>Tone</option>
+                <option>Rhythm</option>
+                <option>Technique</option>
+                <option>Theory</option>
+                <option>Sight-Reading</option>
+                <option>Improvisation</option>
+            </select>
+        </div>
+        <div class="duration">
+            <label for="duration">Duration of session:</label>
+            <input type="radio" name="duration" id="15minutes" value="text" checked>15 minutes
+            <input type="radio" name="duration" id="15minutes" value="text" checked>30 minutes
+            <input type="radio" name="duration" id="15minutes" value="text" checked>45 minutes
+            <input type="radio" name="duration" id="15minutes" value="text" checked>60 minutes
+        </div>
+        <div class="funTime">
+            <label for="funTime">Fun Times</label>
+            <input type="checkbox" name="fun" id="fun" value="yes">Are you ready to start? Music, pencil, instrument, water?
+        </div>
+        <div class="submit">
+            <label for="begin"></label>
+            <button id="begin" >Begin</button>
+            <label for="clear"></label>
+            <button id="clearForm">Clear Form</button>
+        </div>
+    </form>
+    <script src="newscript.js"></script>
+</body>
+</html>

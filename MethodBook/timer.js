@@ -16,8 +16,24 @@ const runPractice = function() {
     currentExercise.src = exercise[0];
     currentExercise.title = exercise[1];
     title.value = exercise[1];
-    document.write(`<script src="${exercise[0]}"></script>`)
+    // document.write(`<script src="${exercise[0]}"></script>`)
 };
+
+var w;
+
+const startCountDown = () => {
+    if(typeof(Worker) !=="undefined") {
+        if(typeof(w) == "undefined") {
+            w=new Worker("Countdown.js");
+        }
+        w.onmessage = function(event) {
+            document.getElementById("countDown").innHTML = event.data
+        };
+    } else {
+        document.getElementById("countDown").innerHTML = "Sorry! No Web Worker support.";
+    }
+    
+}
 
 document.addEventListener("DOMContentLoaded", () => {
     const links = $("#exercise_list").querySelectorAll("a");
@@ -33,6 +49,8 @@ document.addEventListener("DOMContentLoaded", () => {
         timer = setInterval(runPractice, 1000);
         $("#start").disabled = true;
         $("#reset").disabled = false;
+        startCountDown();
+        
 
     });
 });

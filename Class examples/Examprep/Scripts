@@ -1,0 +1,3 @@
+console.error("");
+console.warn("");
+console.trace(); //sends a stack trace to the Console panel
