@@ -46,14 +46,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     $("#start").addEventListener("click", () => {
         runPractice();
-        // timer = setInterval(runPractice, 1000);
+        timer = setInterval(runPractice, 1000);
         $("#start").disabled = true;
         $("#reset").disabled = false;
         startCountDown();
     });
 
     $("#reset").addEventListener("click", () => {
-        // clearInterval(timer);
+        clearInterval(timer);
         $("#start").disabled = false;
         $("#reset").disabled = true;
     });
