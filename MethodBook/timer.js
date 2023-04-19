@@ -27,7 +27,7 @@ const startCountDown = () => {
             w=new Worker("Countdown.js");
         }
         w.onmessage = function(event) {
-            document.getElementById("countDown").innHTML = event.data
+            document.getElementById("countDown").innerHTML = event.data
         };
     } else {
         document.getElementById("countDown").innerHTML = "Sorry! No Web Worker support.";
@@ -46,11 +46,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     $("#start").addEventListener("click", () => {
         runPractice();
-        timer = setInterval(runPractice, 1000);
+        // timer = setInterval(runPractice, 1000);
         $("#start").disabled = true;
         $("#reset").disabled = false;
         startCountDown();
-        
-
     });
+
+    $("#reset").addEventListener("click", () => {
+        // clearInterval(timer);
+        $("#start").disabled = false;
+        $("#reset").disabled = true;
+    });
+
 });

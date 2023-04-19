@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const confirmEmail = $("#confirmEmail");
         const focus = $("#practiceFocus");
         const duration = $("#duration");
-        const funTimes = $("#funTimes");
+        const fun = $("#fun");
 
         let errorMessage = "";
 
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (focus.value == "Select a focus") {
             errorMessage += "Choose a session focus.\n";
         }
-        if (funTimes != true) {
+        if (fun.checked == false) {
             errorMessage += "We'll only start if you're ready for fun.\n";
         }
 

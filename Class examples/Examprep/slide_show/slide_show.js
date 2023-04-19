@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
     $("#pause").addEventListener("click", () => {
-        clearInterval(timer)
+        clearInterval(timer);
         $("#start").disabled = false;
         $("#pause").disabled = true;
 

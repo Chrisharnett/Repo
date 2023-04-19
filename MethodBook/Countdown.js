@@ -1,13 +1,16 @@
 "use strict"
 
-var i = 0;
+var i = 1;
 
 function countDown(interval) {
-    i = i + 1;
     let currentTime = interval - i;
     postMessage(currentTime);
     if (currentTime > 0){
-        setInterval(countDown,1000, 180);
+        timer = setInterval(countDown,1000,180);
+        i++
+    }
+    else {
+        postMessage("Done. Hit Next.")
     }
     
 }
